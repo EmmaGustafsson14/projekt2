@@ -1,0 +1,38 @@
+#container {
+
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'na na na na'
+    'mn mn mn mn'
+    'ft ft ft ft'
+
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    grid-area: hd;
+    background-color: orange;
+    h
+}
+
+nav {
+    grid-area: na;
+    background-color: lightblue;
+}
+
+main {
+    grid-area: mn;
+    background-color: pink;
+
+}
+
+footer {
+    grid-area: ft;
+    background-color: lightgreen;
+}
