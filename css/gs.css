@@ -1,10 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #container {
 
     display: grid;
     height: 100vh;
     width: 100vw;
     grid-template-areas: 
-    'hd hd hd hd'
     'na na na na'
     'mn mn mn mn'
     'ft ft ft ft'
@@ -15,72 +19,77 @@ body {
     margin: 0px;
 }
 
-header {
-    grid-area: hd;
-    background-color: orange;
-    
-}
 
 nav {
     grid-area: na;
-
+    width: 100%;
+    height: 60px;
+    background-color: black;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: darkgray;
-}
-
-
-.navbar a {
-    float: left; 
-    font-size: 16px;
+nav p {
+    font-family: arial;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-docoration: none;
-}
-
-.subnav {
+    font-size: 24px;
+    line-height: 55px;
     float: left;
-    overflow: hidden;
+    padding: 0px 20px;
 }
 
-/* .subnav-content {
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    font-family: arial;
+    color: white;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+
+}
+
+nav ul li ul {
     display: none;
     position: absolute;
-    left: 0;
-    background-color: lightblue;
-    width: 100%;
-    z-index: 1;
+    background-color: black;
+    padding: 0px;
 }
 
-.subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
+nav ul li:hover ul {
+    display: block;
 }
 
-.subnav-content a:hover {
-    background-color: #eee;
-    color: black;
+nav ul li ul li{
+    width: 180px;
 }
 
-.subnav:hover .subnav-content {
-    display:block;
+nav ul li ul li a {
+    padding: 8px 14px;
 }
 
-*/
+nav ul li ul li a:hover {
+    background-color: darkgrey;  
+}
 
 
 
 main {
     grid-area: mn;
     background-color: pink;
+    height: 80vh;
 
 }
 
 footer {
     grid-area: ft;
     background-color: lightgreen;
+    height: 20vh;
 }
