@@ -6,7 +6,7 @@
 #container {
 
     display: grid;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     grid-template-areas: 
     'na na na na'
@@ -19,6 +19,8 @@ body {
     margin: 0px;
 }
 
+
+/*NAVIGATION*/
 
 nav {
     grid-area: na;
@@ -55,13 +57,6 @@ nav a {
 .fancy-link:hover::after {
     transform: scaleX(1);
 }
-
-
-/*
-.navbg:hover {
-    background-color: #181818;  
-}
-*/
 
 
 nav img {
@@ -140,98 +135,25 @@ nav ul li ul li a:hover {
     width: 200px;
 }
 
+/*
 .sokimg {
     position: relative;
     height: 15px;
-    
+
     background-color: red;
     float: right;
 }
-
-
-
-
-/*
-.search-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: green;
-    height: 40px;
-    border-radius:
-}
-
-.search-btn {
-    color: red;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 240px;
-
-}
 */
 
 
 
-
-
-
-/*  Search Bar Navigation   
-
-.search-form {
-    margin-top: 15px;
-    float: right;
-    margin-right: 100px;
-}
-
-input [type=text] {
-    padding: 7px;
-    border: none;
-    font-size 16px;
-}
-
-button {
-    float:right;
-    background: orange;
-    color: white;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    position: relative;
-    padding: 7px;
-    border: none;
-    font-size: 16px;
-
-
-}
-*/
-
-
-
-
+/*MAIN*/
 
 
 main {
     grid-area: mn;
     background-color: pink;
-    height: 80vh;
+    height: 150vh;
 
 
 }
@@ -240,63 +162,6 @@ main div div img {
     height: 360px;
     width: 640px;
 }
-
-/*
-
-main .slide-container {
-    width: 640px;
-    height: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-main .image-container {
-    width: 3200px;
-    height: 360px;
-    position: relative;
-    transition: left 2s;
-}
-
-main .slider-image {
-    float: left;
-    margin: 0px;
-    padding: 0px;
-}
-
-main .button-container {
-    top: -20px;
-    position: relative;
-}
-
-main .slider.button {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: white;
-}
-
-#slider-image-1:target ~ .image-container {
-    left: 0px;
-}
-#slider-image-2:target ~ .image-container {
-    left: -640px;
-}
-#slider-image-3:target ~ .image-container {
-    left: -1280px;
-}
-#slider-image-4:target ~ .image-container {
-    left: -1920px;
-}
-#slider-image-5:target ~ .image-container {
-    left: -2560px;
-}
-
-
-*/
-
 
 
 #slider {
@@ -350,11 +215,53 @@ main .slider.button {
 }
 
 
+/*FOOTER*/
+
 
 
 footer {
     grid-area: ft;
-    background-color: lightgreen;
-    height: 20vh;
+    background-color: #323233;
+    color: #B4B4B4;
+    height: 25vh;
+    width: 100vw;
 
+}
+
+footer ul li {
+    list-style: none;
+    
+}
+
+footer a {
+    color: #B4B4B4;
+    text-decoration: none;
+}
+
+
+
+
+.column {
+    float: left;
+    width: 25%;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#innerFooter {
+    background-color: #111111;
+    color: white;
+    height:25vh;
+    width: 100vw;
+}
+
+#innerFooter img {
+    height: 100px;
+    width: 300px;
 }
