@@ -153,7 +153,7 @@ nav ul li ul li a:hover {
 main {
     grid-area: mn;
     background-color: pink;
-    height: 150vh;
+    height: 125vh;
 
 
 }
@@ -163,18 +163,12 @@ main div div img {
     width: 640px;
 }
 
-
-#slider {
-    overflow: hidden;
-
-}
-
 #slider figure {
     position: relative;
     width: 250%;
     margin: 0;
     left: 0;
-    animation: 20s slider infinite;
+    animation: 15s slider infinite;
 
 }
 
@@ -222,8 +216,8 @@ main div div img {
 footer {
     grid-area: ft;
     background-color: #323233;
-    color: #B4B4B4;
-    height: 25vh;
+    color: rgb(231, 231, 231);
+    height: 50vh;
     width: 100vw;
 
 }
@@ -254,6 +248,9 @@ footer a {
 }
 
 
+
+/*INNER FOOTER*/
+
 #innerFooter {
     background-color: #111111;
     color: white;
@@ -264,4 +261,50 @@ footer a {
 #innerFooter img {
     height: 100px;
     width: 300px;
+}
+
+
+/*
+#facebookimg {
+    position: relative;
+    background-color: blue;
+    height: 24px;
+    width: 24px;
+
+}
+
+#youtubeimg {
+    position: relative;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+*/
+
+
+
+#innerFooter .sokruta2  {
+    position: relative;
+    top: -10%;
+    left: 60%;
+    background: white;
+    height: 15px;
+    width: 300px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+#innerFooter .sok-text2 {
+    position: absolute;
+    bottom: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: -5px;
+    float: right;
+    color: black;
+    font-size: 16px;
+    width: 200px;
 }
