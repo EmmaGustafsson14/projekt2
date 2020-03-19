@@ -146,7 +146,6 @@ nav ul li ul li a:hover {
 */
 
 
-
 /*MAIN*/
 
 
@@ -307,4 +306,12 @@ footer a {
     color: black;
     font-size: 16px;
     width: 200px;
+}
+
+
+@media screen and (max-width:375px) {
+
+
+
+
 }
