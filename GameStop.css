@@ -5,8 +5,8 @@
 #container {
 
     display: grid;
-    height: 100vh;
-    width: 100vw;
+    height: 200vh;
+    width: 50vh;
     grid-template-areas: 
     'hd hd hd hd'
     'na na na na'
@@ -15,30 +15,48 @@
 
 }
 
+/*ALL HEIGHTS*/
 
 header {
     grid-area: hd;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     height: 10vh;
 }
+
+nav {
+    grid-area: na;
+    background-color: rgb(214, 57, 36);
+    height: 5vh;
+}
+
+main {
+    grid-area: mn;
+    background-color: blue;
+    height: 150vh;
+}
+
+footer {
+    grid-area: ft;
+    background-color: yellow;
+    height: 35vh;
+}
+
+
+/*HEADER*/
 
 header img {
     /*height: 80px;
     width: 240px;*/
     height: 55px;
     width: 170px;
-    padding: 15px;
+    padding: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 
 }
 
-nav {
-    grid-area: na;
-    background-color: gray;
-    height: 5vh;
-}
+/*NAVIGATION*/
 
 #menu {
     margin-left: auto;
@@ -48,40 +66,52 @@ nav {
     width: 35px;
 }
 
-
-
+#search {
+    position: absolute;
+    left: 270px;
+    height: 35px;
+    width: 35px;
+}
 
 #shop {
     position: absolute;
-    right: 15px;
+    left: 315px;
     height: 35px;
     width: 35px;
-    
 }
 
 
-
-
-
-main {
-    grid-area: mn;
-    background-color: blue;
-    height: 50vh;
-}
+/*MAIN*/
 
 #callofduty {
     position: relative;
-    width: 349px;
-    height: 196px;
-
-
+    width: 50vh; /*349px;*/
+    /*height: 196px;*/
+    margin: 25px 0 0 0;
 }
 
-
-
-
-footer {
-    grid-area: ft;
-    background-color: yellow;
-    height: 35vh;
+#redrem {
+    position: relative;
+    width: 50vh;
 }
+
+#borderlands {
+    position: relative;
+    width: 50vh; 
+}
+
+#nba2k20 {
+    position: relative;
+    width: 50vh;
+}
+
+#ac {
+    position: relative;
+    width: 50vh;
+}
+
+/*FOOTER*/
+
+
+
+
