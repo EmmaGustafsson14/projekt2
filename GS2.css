@@ -1,0 +1,259 @@
+* {
+    margin: 0px;
+}
+
+
+#container {
+
+    display: grid;
+    width: 100vw;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'na na na na'
+    'mn mn mn mn'
+    'ft ft ft ft'
+
+}
+
+/* DESKTOP */
+
+header {
+    grid-area: hd;
+    background-color: rgb(0, 0, 0);
+    height: 18vh;
+    border-bottom: 2px solid white;
+}
+
+nav {
+    grid-area: na;
+    background-color: rgb(0, 0, 0);
+    height: 7.2vh;
+    position: relative;
+    display: block;
+}
+
+main {
+    grid-area: mn;
+    background-color: rgb(0, 0, 0);
+    /* height: 700px; */
+    height: 80vh;
+    padding: 30px;
+    border-bottom: 2px solid white;
+}
+
+
+
+footer {
+    grid-area: ft;
+    background-color: rgb(0, 0, 0);
+    height: 50vh;
+}
+
+
+
+/* HEADER */
+
+header img {
+    height: 100px;
+    width: 280px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/* NAVIGATION */
+
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    z-index: 100;
+
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    color: white;
+}
+
+a:hover {
+    background-color: rgb(190, 49, 30);
+}
+
+
+nav ul li ul{
+    display: none;
+}
+
+nav ul li:hover ul {
+    display:block;
+    float: none;
+    position: absolute;
+   
+}
+
+nav ul li ul li {
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1.5px solid rgb(50, 50, 50);
+}
+
+nav ul li ul li:hover {
+    width: 150px;
+    background-color: rgb(50, 50, 50);
+}
+
+
+
+#search {
+    position: absolute;
+    padding: 7.5px;
+    right: 150px;
+    height: 35px;
+    width: 35px;
+}
+#search:hover { 
+    background-color: rgb(190, 49, 30);
+    cursor: pointer;
+}
+
+#shop {
+    position: absolute;
+    padding: 7.5px;
+    right: 50px;
+    height: 35px;
+    width: 35px;
+}
+
+#shop:hover { 
+    background-color: rgb(190, 49, 30);
+}
+
+
+/* MAIN */
+
+.imgcontainer {
+    position: relative;
+    width: 30;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image {  /* IMAGE */
+    position: relative;
+    width: 349px;
+    height: 196px;
+    padding: 30px;
+
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.boxmiddle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.imgcontainer:hover .image{
+    opacity: 0.3;
+}
+
+.imgcontainer:hover .boxmiddle {
+    opacity: 1;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.text:hover {
+    background-color: rgb(190, 49, 30);
+    cursor: pointer;
+}
+
+
+
+
+/* FOOTER */
+
+
+
+.column {
+    float:left;
+    width: 30%;
+    height: 50vh;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+
+/* FOOTER */
+
+footer ul li {
+    line-height: 50px;
+    padding: 0 20px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1.5px solid rgb(31, 31, 31);
+    list-style-type: none;
+}
+
+footer .dropbtn {
+    color: white;
+}
+
+footer ul li:active ul {
+    display: block;
+    background-color: rgb(0, 0, 0);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li ul { /*göm den inre listan*/
+    display: none;
+}
+
+footer ul:hover li ul { /*visa den inre listan*/
+    display: block;
+}
+
+
+footer ul li ul li:hover { /*röd färg på inre listan*/
+    color: white;
+    background-color: rgb(190, 49, 30);
+} 
+
+
+/* MOBILE */
+
+@media screen and (max-width: 800px) {
+
+    nav ul {
+        display: none;
+    }
+
+}
