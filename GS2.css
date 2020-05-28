@@ -109,7 +109,11 @@ nav ul li ul li:hover {
     background-color: rgb(50, 50, 50);
 }
 
-
+#menu {
+    display:block;
+    height: 35px;
+    width: 35px;
+}
 
 #search {
     position: absolute;
@@ -250,10 +254,17 @@ footer ul li ul li:hover { /*röd färg på inre listan*/
 
 /* MOBILE */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 400px) {
 
     nav ul {
         display: none;
+    }
+
+/* FUNKAR INTE */
+    #menu {
+        display:block;
+        background-color: green;
+
     }
 
 }
