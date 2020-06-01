@@ -41,13 +41,12 @@ main {
     border-bottom: 2px solid white;
 }
 
-
-
 footer {
     grid-area: ft;
     background-color: rgb(0, 0, 0);
     height: 50vh;
 }
+
 
 
 
@@ -67,80 +66,89 @@ header img {
 /* NAVIGATION */
 
 
-nav ul li {
+
+.dropdown li {
     float: left;
     list-style: none;
+    left: 30px;
     position: relative;
     z-index: 100;
 
 }
 
-nav ul li a {
+.dropdown li a {
     display: block;
     text-decoration: none;
     padding: 16px;
     color: white;
 }
 
+
+
 a:hover {
     background-color: rgb(190, 49, 30);
 }
 
 
-nav ul li ul{
+.dropdown li ul{
     display: none;
 }
 
-nav ul li:hover ul {
+.dropdown li:hover ul {
     display:block;
     float: none;
     position: absolute;
    
 }
 
-nav ul li ul li {
+.dropdown li ul li {
     width: 150px;
     background-color: rgb(0, 0, 0);
     border-bottom: 1.5px solid rgb(50, 50, 50);
 }
 
-nav ul li ul li:hover {
+.dropdown li ul li:hover {
     width: 150px;
     background-color: rgb(50, 50, 50);
 }
 
-#menu {
-    display:block;
-    height: 35px;
-    width: 35px;
-}
 
-#search {
+.search {
     position: absolute;
     padding: 7.5px;
-    right: 150px;
+    right: 175px;
     height: 35px;
     width: 35px;
 }
-#search:hover { 
+.search:hover { 
     background-color: rgb(190, 49, 30);
     cursor: pointer;
 }
 
-#shop {
+.shop {
     position: absolute;
     padding: 7.5px;
-    right: 50px;
+    right: 75px;
     height: 35px;
     width: 35px;
 }
 
-#shop:hover { 
+.shop:hover { 
     background-color: rgb(190, 49, 30);
 }
 
+.menu {
+    position: absolute;
+    padding: 7.5px;
+    left: 30px;
+    height: 35px;
+    width: 35px;
+    display: none;
 
-/* MAIN */
+}
+
+
+/* MAIN HOME */
 
 .imgcontainer {
     position: relative;
@@ -191,6 +199,23 @@ nav ul li ul li:hover {
     background-color: rgb(190, 49, 30);
     cursor: pointer;
 }
+
+/* MAIN SHOPPING */
+
+.shopping {
+    color: white;
+}
+
+
+/* MAIN KONSOLER*/
+
+
+.konsoler {
+    color:white;
+}
+
+
+
 
 
 
@@ -252,19 +277,58 @@ footer ul li ul li:hover { /*röd färg på inre listan*/
 } 
 
 
-/* MOBILE */
 
-@media screen and (max-width: 400px) {
 
-    nav ul {
+@media screen and (max-width: 600px) {
+    
+    /* NAVIGATION */
+    .dropdown li {
+        float: none;
+        width: 20%;
+        left: -40px;
+    }
+
+    .shop {
+        top: 1px;
+        right: 50px;
+    }
+
+    .search {
+        top: 1px;
+        right: 150px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu:hover {
+        background-color: rgb(190, 49, 30);
+        cursor: pointer;
+    }
+    
+
+    .dropdown {
         display: none;
     }
 
-/* FUNKAR INTE */
-    #menu {
-        display:block;
-        background-color: green;
-
+    .imgcontainer {
+        float: none;
     }
+
+    /* MAIN */
+    main {
+        height: 230vh;
+    }
+
+
+    /* MAIN KONSOLER */
+    .mkonsoler {
+        height: 120vh;
+    }
+
+
+
+
 
 }
