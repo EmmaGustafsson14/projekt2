@@ -67,6 +67,10 @@ header img {
 
 
 
+
+
+
+
 .dropdown li {
     float: left;
     list-style: none;
@@ -110,8 +114,7 @@ a:hover {
 .dropdown li ul li:hover {
     width: 150px;
     background-color: rgb(50, 50, 50);
-}
-
+} 
 
 .search {
     position: absolute;
@@ -146,6 +149,11 @@ a:hover {
     display: none;
 
 }
+
+
+
+
+
 
 
 /* MAIN HOME */
@@ -206,6 +214,15 @@ a:hover {
     color: white;
 }
 
+#kassaknapp {
+
+    height: 25px;
+    width: 200px;
+ 
+}
+
+
+
 
 /* MAIN KONSOLER*/
 
@@ -214,6 +231,18 @@ a:hover {
     color:white;
 }
 
+
+/* MAIN READ MORE */
+
+.goback {
+    width: 35px;
+    display:block;
+}
+
+.goback:hover {
+    background-color: rgb(190, 49, 30);
+    cursor: pointer;
+}
 
 
 
