@@ -90,7 +90,7 @@ header img {
 
 
 a:hover {
-    background-color: rgb(190, 49, 30);
+    border-bottom: 2px solid rgb(190, 49, 30);
 }
 
 
@@ -124,8 +124,8 @@ a:hover {
     width: 35px;
 }
 .search:hover { 
-    background-color: rgb(190, 49, 30);
     cursor: pointer;
+    border-bottom: 2px solid rgb(190, 49, 30);
 }
 
 .shop {
@@ -137,7 +137,7 @@ a:hover {
 }
 
 .shop:hover { 
-    background-color: rgb(190, 49, 30);
+    border-bottom: 2px solid rgb(190, 49, 30);
 }
 
 .menu {
@@ -240,8 +240,9 @@ a:hover {
 }
 
 .goback:hover {
-    background-color: rgb(190, 49, 30);
+    border-bottom: 2px solid rgb(190, 49, 30);
     cursor: pointer;
+    
 }
 
 
